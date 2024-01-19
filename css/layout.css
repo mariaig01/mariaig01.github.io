@@ -21,6 +21,10 @@
   
   
   /* Main Page Layout */
+  .main-content {
+    padding: 20px; /* Update the margin to padding */
+    margin: 0; /* Remove the margin */
+  }
   
   #main-content {
     margin: 225px 425px;
