@@ -35,7 +35,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: navy;
+    background-color: rgb(0, 0, 100);
   }
   
   .nav-title-link {
@@ -86,7 +86,7 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
-    background-color: navy;
+    background-color: rgb(0, 0, 100);
   }
   
   /* Link Styling */
