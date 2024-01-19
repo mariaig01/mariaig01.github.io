@@ -25,6 +25,8 @@
     display: flex;
     flex-direction: column;
     gap: 96px;
+    background-color: navy;
+    color: white;
   }
   
   
@@ -174,27 +176,55 @@
   
   /* Extra Extra large devices (large laptops and desktops, 1200px and below) */
   @media only screen and (max-width: 1600px) {
+    .navbar {
+      background-color: navy;
+    }
+
     #main-content {
       margin: 225px 275px;
+    }
+    
+    #footer {
+      background-color: navy;
     }
   }
   
   /* Extra large devices (large laptops and desktops, 1200px and below) */
   @media only screen and (max-width: 1200px) {
+    .navbar {
+      background-color: navy;
+    }
+
     #main-content {
       margin: 225px 175px;
+    }
+    
+    #footer {
+      background-color: navy;
     }
   }
   
   /* Large devices (laptops/desktops, 1000px and below) */
   @media only screen and (max-width: 1000px) {
+    .navbar {
+      background-color: navy;
+    }
+
     #main-content {
       margin: 225px 75px;
+    }
+    
+    #footer {
+      background-color: navy;
     }
   }
   
   /* Small devices (portrait tablets and large phones, 800px and below) */
   @media only screen and (max-width: 800px) {
+    .navbar {
+      background-color: navy;
+    }
+
     #main-content {
       margin: 150px 50px;
     }
@@ -206,16 +236,28 @@
     .project-card {
       max-width: calc((100% - 16px) / 2);
     }
+    
+    #footer {
+      background-color: navy;
+    }
   }
   
   /* Small devices (portrait tablets and large phones, 600px and below) */
   @media only screen and (max-width: 600px) {
+    .navbar {
+      background-color: navy;
+    }
+
     #main-content {
       margin: 125px 20px;
     }
   
     .project-card {
       max-width: 100%;
+    }
+
+    #footer {
+      background-color: navy;
     }
   }
   
