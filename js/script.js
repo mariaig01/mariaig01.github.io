@@ -23,3 +23,39 @@ function adjustTooltipPosition(event) {
       tooltip.style.left = leftOffset + 'px';
   }
 }
+
+// Asegúrate de ejecutar el código después de que se cargue el DOM
+document.addEventListener('DOMContentLoaded', function () {
+  const programmingLanguagesImages = document.querySelectorAll('.programming-languages img');
+  const technologiesAndToolsImages = document.querySelectorAll('.technologies-and-tools img');
+
+  function adjustTooltipPosition(event) {
+    const tooltip = document.getElementById('tooltip');
+    const image = event.target;
+
+    const rect = image.getBoundingClientRect();
+    const topPosition = rect.top + window.scrollY + rect.height + 10; // Ajuste vertical
+    const leftPosition = rect.left + window.scrollX + rect.width / 2; // Ajuste horizontal al centro
+
+    tooltip.textContent = image.alt;
+    tooltip.style.top = `${topPosition}px`;
+    tooltip.style.left = `${leftPosition}px`;
+
+    tooltip.classList.add('visible');
+  }
+
+  function hideTooltip() {
+    const tooltip = document.getElementById('tooltip');
+    tooltip.classList.remove('visible');
+  }
+
+  programmingLanguagesImages.forEach((image) => {
+    image.addEventListener('mouseover', adjustTooltipPosition);
+    image.addEventListener('mouseout', hideTooltip);
+  });
+
+  technologiesAndToolsImages.forEach((image) => {
+    image.addEventListener('mouseover', adjustTooltipPosition);
+    image.addEventListener('mouseout', hideTooltip);
+  });
+});
