@@ -101,6 +101,7 @@
     display: inline-block;
     background-color: white;
     color: rgb(0, 0, 100);
+    border-radius: 5px;
   }
 
   .image-tooltip {
@@ -114,7 +115,7 @@
       transition: transform 0.3s ease-in-out;
   }
 
-  .body-text img:hover + .image-tooltip {
+  .body-text img:hover + .image-container + .image-tooltip {
       display: block; /* Muestra el tooltip cuando el mouse está sobre la imagen */
   }
   
