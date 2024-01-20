@@ -87,7 +87,6 @@
     max-width: 50px;
     height: auto;
     margin: 12px 7px;
-    position: relative;
     transition: transform 0.3s ease-in-out; /* Agrega una transición suave para mejorar la experiencia visual */
   }
 
@@ -122,7 +121,14 @@
     margin: 10px 0px;
     display: block;
   }
+
+  #image-tooltip {
+    display: none;
+  }
   
+  #image-tooltip.visible {
+    display: block;
+  }
   
   /* Project Section */
   
