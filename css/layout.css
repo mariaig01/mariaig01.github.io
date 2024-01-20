@@ -99,6 +99,8 @@
   .image-container {
     position: relative;
     display: inline-block;
+    background-color: white;
+    color: rgb(0, 0, 100);
   }
 
   .image-tooltip {
