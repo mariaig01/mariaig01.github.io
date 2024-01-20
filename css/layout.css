@@ -82,6 +82,12 @@
     flex-direction: column;
     gap: 34px;
   }
+
+  .body-text img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
   
   
   
