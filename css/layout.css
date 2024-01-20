@@ -93,8 +93,6 @@
 
   .body-text img:hover {
       transform: scale(1.2); /* Hace que la imagen se agrande ligeramente al pasar el mouse sobre ella */
-      background-color: white;
-      border-radius: 5px;
   }
 
   .image-tooltip {
@@ -110,6 +108,8 @@
 
   .body-text img:hover + .image-tooltip {
       display: block; /* Muestra el tooltip cuando el mouse está sobre la imagen */
+      background-color: white;
+      border-radius: 5px;
   }
   
   .skill-group {
