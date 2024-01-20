@@ -87,6 +87,25 @@
     max-width: 50px;
     height: auto;
     margin-right: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave para mejorar la experiencia visual */
+  }
+
+  .body-text img:hover {
+      transform: scale(1.2); /* Hace que la imagen se agrande ligeramente al pasar el mouse sobre ella */
+  }
+
+  .image-tooltip {
+      position: absolute;
+      display: none;
+      background-color: #000;
+      color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      z-index: 1; /* Asegura que el tooltip esté por encima de otras capas */
+  }
+
+  .body-text img:hover + .image-tooltip {
+      display: block; /* Muestra el tooltip cuando el mouse está sobre la imagen */
   }
   
   
