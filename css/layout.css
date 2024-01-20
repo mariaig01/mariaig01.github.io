@@ -116,7 +116,7 @@
       transition: transform 0.3s ease-in-out;
   }
 
-  .body-text img:hover + .image-container + .image-tooltip {
+  .body-text img:hover + .image-tooltip {
       display: block; /* Muestra el tooltip cuando el mouse está sobre la imagen */
   }
   
