@@ -109,7 +109,7 @@
       padding: 10px;
       border-radius: 5px;
       z-index: 1; /* Asegura que el tooltip esté por encima de otras capas */
-      /*transform: translateX(-50%);*/
+      transition: transform 0.3s ease-in-out;
   }
 
   .body-text img:hover + .image-tooltip {
