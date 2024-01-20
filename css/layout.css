@@ -103,7 +103,6 @@
   }
 
   .image-container:hover {
-    transform: scale(1.2);
     background-color: white;
     color: rgb(0, 0, 100);
     border-radius: 5px;
