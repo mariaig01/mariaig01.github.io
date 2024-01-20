@@ -108,7 +108,16 @@
       display: block; /* Muestra el tooltip cuando el mouse está sobre la imagen */
   }
   
-  
+  .skill-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .skill-group strong {
+    margin-bottom: 10px;
+    display: block;
+  }
   
   
   /* Project Section */
