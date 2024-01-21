@@ -193,6 +193,7 @@
   .project-header-image {
     width: 100%;
     height: auto;
+    border-radius: 5px;
   }
   
   #project-details {
@@ -235,6 +236,7 @@
       .gallery-image {
         width: 100%;
         height: auto;
+        border-radius: 5px;
       }
   
   
