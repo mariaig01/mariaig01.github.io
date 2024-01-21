@@ -176,7 +176,7 @@
         height: 200px;
         object-fit: cover;
         object-position: center;
-        border-radius: 5px;
+        border-radius: 10px;
       }
   
   
@@ -193,7 +193,7 @@
   .project-header-image {
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    border-radius: 10px;
   }
   
   #project-details {
@@ -236,7 +236,7 @@
       .gallery-image {
         width: 100%;
         height: auto;
-        border-radius: 5px;
+        border-radius: 10px;
       }
   
   
