@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Página principal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        #banner img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #usuario {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        #usuario p {
+            margin: 0;
+        }
+
+        #usuario img {
+            max-width: 50px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #ffd8b8;
+            color: #fff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        #publi_principal,
+        #publi_secundaria {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .info {
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .ranking ol {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        main {
+            padding: 10px;
+        }
+
+        .opciones {
+            margin-bottom: 10px;
+        }
+
+        .opciones h4 {
+            margin: 0;
+        }
+
+        .opciones label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .incidencias {
+            margin-bottom: 20px;
+        }
+
+        .incidencias h3 {
+            margin: 0;
+        }
+
+        .incidencias ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .incidencias input[type="text"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        #comentarios ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        #acerca_de_incidencia button {
+            margin-right: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer .info {
+            margin-bottom: 5px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section id="banner">
+            <img src="/home/manugr/Imágenes/banner.jpg" alt="banner de la página">
+            <h1>Proyecto TW</h1>
+        </section>
+        
+        <section id="usuario">
+            <p>Nombre del usuario</p>
+            <p>Rol del usuario</p>
+            <p><img src="/home/manugr/Imágenes/perfil_anonimo.png" alt="Foto del usuario"></p>
+
+            <button type="submit">Editar</button>
+            <button type="submit">Logout</button>
+        </section>
+    </header>
+        
+    <nav>
+        <a href="">Ver incidencias</a>
+        <a href="">Nueva incidencia</a>
+        <a href="">Mis incidencias</a>
+        <a href="">Gestión de usuarios</a>
+        <a href="">Ver log</a>
+        <a href="">Gestión de BBDD</a>
+    </nav>
+
+    <section id="publi_principal" class="publicidad">
+        <h2>Publicite aquí sus cosas</h2>
+    </section>
+
+    <aside id="info_general" class="info">
+        <section id="info_incidencias" class="info">
+            <ul>
+                <li>Número de incidencias total: 0</li>
+                <li>Número de incidencias pendientes: 0</li>
+                <li>Número de incidencias comprobadas: 0</li>
+                <li>Número de incidencias tramitadas: 0</li>
+                <li>Número de incidencias resueltas: 0</li>
+                <li>Número de incidencias irresolubles: 0</li>
+            </ul>
+            
+        </section>
+
+        <section id="info_usuarios" class="info">
+            <section id="top_user_incidencias" class="ranking">
+                <h4>Top users por nº de incidencias</h4>
+                <ol>
+                    <li>User1</li> <!-- Acceder en la BBDD -->
+                    <li>User2</li>
+                    <li>User3</li>
+                </ol>
+            </section>
+
+            <section id="top_user_comentarios" class="ranking">
+                <h4>Top users por nº de comentarios</h4>
+                <ol>
+                    <li>User1</li> <!-- Acceder en la BBDD -->
+                    <li>User2</li>
+                    <li>User3</li>
+                </ol>
+            </section>
+            <section id="publi_secundaria" class="publicidad">
+                <h2>Publicite aquí sus cosas</h2>
+            </section>
+
+        </section>
+    </aside>
+
+    <main>
+        <article id="opciones_incidencias" class="opciones">
+            <section id="ordenar" class="opciones">
+                <h4>Ordenar por:</h4>
+                <label><input type="radio" name="orden_incidencias" value="antigüedad">Antigüedad</button></label>
+                <label><input type="radio" name="orden_incidencias" value="valoracion">Valoraciones positivas</button></label>
+                <label><input type="radio" name="orden_incidencias" value="netas">Valoraciones positivas netas</button></label>
+            </section>
+
+            <section id="buscar_incidencias_texto" class="opciones">
+                <h4>Incidencias que contengan:</h4>
+                <label>Palabras clave: <input type="text" name="buscar_por_palabras_clave"></input></label>
+                <label>Valoraciones positivas: <input type="text" name="buscar_por_lugar"></input></label>
+            </section>
+
+            <section id="buscar_incidencias_estado" class="opciones">
+                <h4>Estado:</h4>
+                <label><input type="checkbox" name="buscar_pendiente" value="pendiente">Pendientes</input></label>
+                <label><input type="checkbox" name="buscar_comprobada" value="comprobada">Comprobadas</input></label>
+                <label><input type="checkbox" name="buscar_tramitada" value="tramitada">Tramitadas</input></label>
+                <label><input type="checkbox" name="buscar_irresoluble" value="irresoluble">Irresolubles</input></label>
+                <label><input type="checkbox" name="buscar_resuelta" value="tramitada">Resueltas</input></label>
+            </section>
+
+            <section id="incidencias_por_pag" class="opciones">
+                <h4>Incidencias por página:</h4> 
+                <label><select name="incidencias_por_pagina" value="antigüedad">
+                    <option value="1">Una incidencia</option>
+                    <option value="2">Dos incidencias</option>
+                    <option value="3">Tres incidencias</option>
+                    <option value="4">Cuatro incidencias</option>
+                </select></label>
+            </section>
+
+            <button type="submit">Aplicar criterios de búsqueda</button>
+        </article>
+
+        <article id="incidencias" class="incidencias">
+            <section id="publicacion_original">
+                <h3>Título de incidencia</h3>
+                <ul>
+                    <li>Autor</li>
+                    <li>Lugar</li>
+                    <li>Fecha</li>
+                    <li>Estado</li>
+                </ul>
+
+                <input type="text" placeholder="Descripción de la incidencia"></input>
+                
+                <h4>Fotografías adjuntadas:</h4>
+                <ul> 
+                    <li><img alt="Foto 1"></li>
+                    <li><img alt="Foto 2"></li>
+                    <li><img alt="Foto 3"></li>
+                </ul>
+
+                <h4>Palabras clave:</h4>
+                <ul>
+                    <li>Palabra 1</li>
+                    <li>Palabra 2</li>
+                    <li>Palabra 3</li>
+                </ul>
+                
+                <h4>Valoraciones:</h4>
+                <ul>
+                    <li>Positivas: 0</li>
+                    <li>Negativas: 0</li>
+                </ul>
+            </section>
+
+            <section id="comentarios">
+                <h3>Comentarios</h3>
+                <ul>
+                    <li>Autor</li>
+                    <li>Fecha</li>
+                </ul>
+                <button type="submit">Eliminar comentario</button>
+                <input type="text" placeholder="Comentario"></input>
+            </section>
+            <section id="acerca_de_incidencia">
+                <button type="submit">Valoración positiva</button>
+                <button type="submit">Valoración positiva</button>
+                <button type="submit">Añadir comentario</button>
+                <button type="submit">Editar comentario</button>
+                <button type="submit">Eliminar incidencia</button>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer>
+        <section id="contacto" class="info">
+            <a href="">Reportar un bug</a>
+            <p>Mail de contacto</p>
+            <p>Teléfono de contacto</p>
+        </section>
+
+        <section id="terminos" class="info">
+            <a href="">Aviso legal</a>
+            <a href="">Política de privacidad</a>
+            <a href="">Política de cookies</a>
+            <a href="">Más información sobre cookies</a>
+        </section>
+
+        <section id="creditos" class="info">
+            <a href="">Documentación</a>
+            <a href="">Créditos</a>
+        </section>
+    </footer>
+</html>
