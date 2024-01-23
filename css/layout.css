@@ -195,6 +195,10 @@
     height: auto;
     border-radius: 10px;
   }
+
+  .project-header-image.half-width {
+    height: calc((100% - 16px) / 2);
+  }
   
   #project-details {
     display: flex;
