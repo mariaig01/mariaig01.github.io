@@ -1,0 +1,4 @@
+[     303ms] [WARNING] <i data-lucide="figma"></i> icon name was not found in the provided icons object. @ https://unpkg.com/lucide@latest:7
+[   12607ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/images/outfit_classification.png:0
+[   12608ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/images/taylor_experience.png:0
+[   12964ms] [ERROR] Failed to load resource: the server responded with a status of 404 (File not found) @ http://localhost:8000/assets/images/civitas_game.png:0

@@ -23,7 +23,7 @@
 }
 
 .nav-title-link:hover .nav-title {
-  color: var(--accent-primary, #06b6d4);
+  color: var(--accent-primary, #FFA6CD);
 }
 
 /* --- Back Arrow --- */
@@ -46,16 +46,16 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 6px;
-  border: 1px solid var(--accent-primary, #06b6d4);
-  color: var(--accent-primary, #06b6d4);
+  border: 1px solid var(--accent-primary, #FFA6CD);
+  color: var(--accent-primary, #FFA6CD);
   text-decoration: none;
   transition: all 0.3s ease;
   margin-left: auto;
 }
 
 .button:hover {
-  background-color: var(--accent-primary, #06b6d4);
-  color: var(--bg-primary, #0a0f1c);
+  background-color: var(--accent-primary, #FFA6CD);
+  color: var(--bg-primary, #120610);
 }
 
 /* --- Icon Link (Footer) --- */
@@ -73,8 +73,8 @@
 
 /* --- Selection --- */
 ::selection {
-  background-color: var(--accent-primary, #06b6d4);
-  color: var(--bg-primary, #0a0f1c);
+  background-color: var(--accent-primary, #FFA6CD);
+  color: var(--bg-primary, #120610);
 }
 
 /* --- Custom Scrollbar --- */
@@ -83,10 +83,10 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-primary, #0a0f1c);
+  background: var(--bg-primary, #120610);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-primary, #06b6d4);
+  background: var(--accent-primary, #FFA6CD);
   border-radius: 3px;
 }

@@ -3,15 +3,15 @@
    ============================================ */
 
 :root {
-  --bg-primary: #0a0f1c;
-  --bg-secondary: #111827;
-  --card-surface: #1e293b;
-  --accent-primary: #06b6d4;
-  --accent-secondary: #3b82f6;
-  --accent-gradient: linear-gradient(135deg, #06b6d4, #3b82f6);
+  --bg-primary: #120610;
+  --bg-secondary: #1A0C15;
+  --card-surface: #2A1522;
+  --accent-primary: #FFA6CD;
+  --accent-secondary: #FF7EB3;
+  --accent-gradient: linear-gradient(135deg, #FFA6CD, #FF7EB3);
   --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 166, 205, 0.08);
   --font-body: 'Inter', sans-serif;
   --font-accent: 'JetBrains Mono', monospace;
 }
@@ -51,7 +51,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(10, 15, 28, 0.95);
+  background-color: rgba(18, 6, 16, 0.95);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--glass-border);

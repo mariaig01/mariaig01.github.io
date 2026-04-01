@@ -124,10 +124,10 @@
 /* Pulse Glow — for accent highlights */
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(6, 182, 212, 0.2);
+    box-shadow: 0 0 5px rgba(255, 166, 205, 0.2);
   }
   50% {
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+    box-shadow: 0 0 20px rgba(255, 166, 205, 0.4);
   }
 }
 

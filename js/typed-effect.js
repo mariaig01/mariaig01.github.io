@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!output) return;
 
   const phrases = [
-    'build LLM Agent systems',
-    'architect data pipelines',
-    'lead AI engineering teams',
-    'design RAG architectures',
-    'deploy models to production'
+    'build full-stack web apps',
+    'craft responsive frontends',
+    'develop cross-platform mobile apps',
+    'integrate AI & computer vision',
+    'secure web applications'
   ];
 
   const TYPE_SPEED = 80;

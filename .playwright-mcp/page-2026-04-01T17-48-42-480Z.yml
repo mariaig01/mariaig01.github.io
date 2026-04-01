@@ -1,0 +1,365 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Main navigation" [ref=e3]:
+    - generic [ref=e4]:
+      - link "María Izquierdo — Home" [ref=e5] [cursor=pointer]:
+        - /url: "#hero"
+        - img "MI Logo" [ref=e6]
+      - link "Download CV" [ref=e7] [cursor=pointer]:
+        - /url: assets/cv/cv_Maria_Angustias_Izquierdo_Garcia.pdf
+      - button "Toggle menu" [ref=e8] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e15]:
+        - paragraph [ref=e16]: Hello, I'm
+        - heading "María Izquierdo" [level=1] [ref=e17]
+        - generic [ref=e18]: I bu|
+        - paragraph [ref=e19]: Full-Stack Software Engineer — Building robust web & mobile experiences
+        - generic [ref=e20]:
+          - link "View My Work" [ref=e21] [cursor=pointer]:
+            - /url: "#projects"
+          - link "Get In Touch" [ref=e22] [cursor=pointer]:
+            - /url: "#contact"
+      - generic [ref=e25]: SCROLL
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: ABOUT ME
+        - heading "Know Who I Am" [level=2] [ref=e30]
+      - generic [ref=e32]:
+        - img "María Izquierdo García" [ref=e34]
+        - generic [ref=e35]:
+          - paragraph [ref=e36]: I'm a Full-Stack Software Engineer at Bracelit, where I build and maintain web platforms for event management and brand campaigns. With dual degrees in Computer Science and Business Administration from the University of Granada, I bring both technical depth and business perspective to every project.
+          - paragraph [ref=e37]: My work spans from frontend development with Angular and Astro to backend services with Laravel and Flask. I'm passionate about AI and computer vision — my bachelor thesis on outfit classification using Flutter and AI models earned a perfect 10/10. I also hold cybersecurity certifications from Cisco and Microsoft, reflecting my commitment to building secure, reliable software.
+          - generic [ref=e38]:
+            - generic [ref=e39]:
+              - text: 0/10
+              - generic [ref=e40]: Thesis Grade
+            - generic [ref=e41]:
+              - text: 0%
+              - generic [ref=e42]: Client Insights Boost
+            - generic [ref=e43]:
+              - text: 0%
+              - generic [ref=e44]: Deployment Speed Up
+            - generic [ref=e45]:
+              - text: "0"
+              - generic [ref=e46]: Degrees
+    - generic [ref=e48]:
+      - generic [ref=e49]:
+        - generic [ref=e50]: EXPERIENCE
+        - heading "Where I've Worked" [level=2] [ref=e51]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e56]: May 2025 — Present
+          - generic [ref=e57]:
+            - heading "Software Engineer" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Bracelit — Granada, Spain
+            - list [ref=e60]:
+              - listitem [ref=e61]: ▸ Added charts and revenue stats to the backoffice, boosting client insights by 20%
+              - listitem [ref=e62]: ▸ Enhanced admin panel with email invitation sending, improving onboarding efficiency by ~18%
+              - listitem [ref=e63]: ▸ Implemented custom sticker printing for event management, reducing manual workload by 22%
+              - listitem [ref=e64]: ▸ Led frontend development of wegowforbrands.com using Astro for cross-brand campaigns
+              - listitem [ref=e65]: ▸ Built a custom Angular platform for interactive seating and venue maps for stadiums
+              - listitem [ref=e66]: ▸ Developed backend services for member management dashboard covering data, payments, and documents
+            - generic [ref=e67]:
+              - generic [ref=e68]: Angular
+              - generic [ref=e69]: Astro
+              - generic [ref=e70]: Laravel
+              - generic [ref=e71]: TypeScript
+              - generic [ref=e72]: REST APIs
+        - generic [ref=e73]:
+          - generic [ref=e75]: Nov 2024 — Apr 2025
+          - generic [ref=e76]:
+            - heading "Software Engineer Internship" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Bracelit — Granada, Spain
+            - list [ref=e79]:
+              - listitem [ref=e80]: ▸ Delivered the complete implementation of wegowforbrands.com using Astro, increasing deployment speed by 25%
+              - listitem [ref=e81]: ▸ Developed the frontend for a web app managing booth access at the Málaga fair
+              - listitem [ref=e82]: ▸ Designed the UI for Boxlit display devices using Ionic, enhancing responsiveness and engagement
+              - listitem [ref=e83]: ▸ Enhanced QR/NFC scanning tool, improving data sync and cutting errors by 23%
+            - generic [ref=e84]:
+              - generic [ref=e85]: Astro
+              - generic [ref=e86]: Ionic
+              - generic [ref=e87]: QR/NFC
+              - generic [ref=e88]: JavaScript
+    - generic [ref=e90]:
+      - generic [ref=e91]:
+        - generic [ref=e92]: SKILLS
+        - heading "What I Work With" [level=2] [ref=e93]
+      - generic [ref=e95]:
+        - button "All" [ref=e96] [cursor=pointer]
+        - button "Frontend" [ref=e97] [cursor=pointer]
+        - button "Backend" [ref=e98] [cursor=pointer]
+        - button "Mobile" [ref=e99] [cursor=pointer]
+        - button "AI / ML" [ref=e100] [cursor=pointer]
+        - button "Tools" [ref=e101] [cursor=pointer]
+        - button "Languages" [ref=e102] [cursor=pointer]
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - img "JavaScript" [ref=e106]
+          - generic [ref=e107]: JavaScript
+        - generic [ref=e109]:
+          - img "TypeScript" [ref=e111]
+          - generic [ref=e112]: TypeScript
+        - generic [ref=e114]:
+          - img [ref=e116]
+          - generic [ref=e121]: Angular
+        - generic [ref=e123]:
+          - img [ref=e125]
+          - generic [ref=e130]: Astro
+        - generic [ref=e132]:
+          - img "HTML5" [ref=e134]
+          - generic [ref=e135]: HTML5
+        - generic [ref=e137]:
+          - img "CSS3" [ref=e139]
+          - generic [ref=e140]: CSS3
+        - generic [ref=e142]:
+          - img "PHP" [ref=e144]
+          - generic [ref=e145]: PHP
+        - generic [ref=e147]:
+          - img [ref=e149]
+          - generic [ref=e152]: Laravel
+        - generic [ref=e154]:
+          - img "Python" [ref=e156]
+          - generic [ref=e157]: Python
+        - generic [ref=e159]:
+          - img "Flask" [ref=e161]
+          - generic [ref=e162]: Flask
+        - generic [ref=e164]:
+          - img [ref=e166]
+          - generic [ref=e170]: JWT Auth
+        - generic [ref=e172]:
+          - img [ref=e174]
+          - generic [ref=e177]: REST APIs
+        - generic [ref=e179]:
+          - img "MySQL" [ref=e181]
+          - generic [ref=e182]: MySQL
+        - generic [ref=e184]:
+          - img "MongoDB" [ref=e186]
+          - generic [ref=e187]: MongoDB
+        - generic [ref=e189]:
+          - img "Flutter" [ref=e191]
+          - generic [ref=e192]: Flutter
+        - generic [ref=e194]:
+          - img "Dart" [ref=e196]
+          - generic [ref=e197]: Dart
+        - generic [ref=e199]:
+          - img [ref=e201]
+          - generic [ref=e203]: Ionic
+        - generic [ref=e205]:
+          - img "PyTorch" [ref=e207]
+          - generic [ref=e208]: PyTorch
+        - generic [ref=e210]:
+          - img [ref=e212]
+          - generic [ref=e215]: Computer Vision
+        - generic [ref=e217]:
+          - img [ref=e219]
+          - generic [ref=e223]: CNNs
+        - generic [ref=e225]:
+          - img [ref=e227]
+          - generic [ref=e235]: Transfer Learning
+        - generic [ref=e237]:
+          - img "Git" [ref=e239]
+          - generic [ref=e240]: Git
+        - generic [ref=e242]:
+          - img "Docker" [ref=e244]
+          - generic [ref=e245]: Docker
+        - generic [ref=e247]:
+          - img "Linux" [ref=e249]
+          - generic [ref=e250]: Linux
+        - generic [ref=e254]: Figma
+        - generic [ref=e256]:
+          - img [ref=e258]
+          - generic [ref=e260]: Cybersecurity
+        - generic [ref=e262]:
+          - img [ref=e264]
+          - generic [ref=e267]: Spanish
+          - generic [ref=e269]: Native
+        - generic [ref=e270]:
+          - img [ref=e272]
+          - generic [ref=e275]: English
+          - generic [ref=e277]: B2
+    - generic [ref=e279]:
+      - generic [ref=e280]:
+        - generic [ref=e281]: PROJECTS
+        - heading "What I've Built" [level=2] [ref=e282]
+      - generic [ref=e284]:
+        - button "All" [ref=e285] [cursor=pointer]
+        - button "AI / CV" [ref=e286] [cursor=pointer]
+        - button "OOP / Algorithms" [ref=e287] [cursor=pointer]
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - img "Outfit Classification AI" [ref=e291]
+            - link "View Details" [ref=e293] [cursor=pointer]:
+              - /url: project-pages/building_page.html
+          - generic [ref=e294]:
+            - text: BACHELOR'S THESIS — 10/10
+            - heading "Outfit Classification AI" [level=3] [ref=e295]
+            - paragraph [ref=e296]: Cross-platform fashion social network built with Flutter and Flask. Uses computer vision and AI models to detect clothing preferences from wardrobe images and interaction history, recommending outfits from personal items and online stores. Integrated PostgreSQL, Redis and MongoDB.
+            - generic [ref=e297]:
+              - generic [ref=e298]: Flutter
+              - generic [ref=e299]: Flask
+              - generic [ref=e300]: Computer Vision
+              - generic [ref=e301]: PyTorch
+              - generic [ref=e302]: PostgreSQL
+        - generic [ref=e303]:
+          - generic [ref=e304]:
+            - img "Taylor Experience App" [ref=e305]
+            - link "View Details" [ref=e307] [cursor=pointer]:
+              - /url: project-pages/building_page.html
+          - generic [ref=e308]:
+            - text: COMPUTER VISION & AR
+            - heading "Taylor Experience — Emotion-Based App" [level=3] [ref=e309]
+            - paragraph [ref=e310]: Desktop app that detects facial emotion using real-time computer vision via webcam, recommends a matching Taylor Swift song, and applies virtual makeup using facial landmark tracking and AR techniques. Built with Python, OpenCV and Dlib.
+            - generic [ref=e311]:
+              - generic [ref=e312]: Python
+              - generic [ref=e313]: OpenCV
+              - generic [ref=e314]: Dlib
+              - generic [ref=e315]: AR
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - img "Civitas Board Game" [ref=e318]
+            - link "View Details" [ref=e320] [cursor=pointer]:
+              - /url: project-pages/building_page.html
+          - generic [ref=e321]:
+            - text: JAVA & OOP
+            - heading "Civitas — OOP Turn-Based Game" [level=3] [ref=e322]
+            - paragraph [ref=e323]: "Turn-based board game in Java using OOP principles with encapsulation, inheritance, and modular class structure: Player, Square, Dice, EventCard. Followed clean code practices, tested with NetBeans IDE. Completed as part of the OOP course at UGR."
+            - generic [ref=e324]:
+              - generic [ref=e325]: Java
+              - generic [ref=e326]: OOP
+              - generic [ref=e327]: Clean Code
+              - generic [ref=e328]: NetBeans
+    - generic [ref=e330]:
+      - generic [ref=e331]:
+        - generic [ref=e332]: CERTIFICATIONS
+        - heading "Achievements & Recognition" [level=2] [ref=e333]
+      - generic [ref=e335]:
+        - generic [ref=e336]:
+          - img [ref=e338]
+          - generic [ref=e340]:
+            - heading "Cisco Certified Support Technician Cybersecurity" [level=3] [ref=e341]
+            - generic [ref=e343]: Cisco Certified
+            - paragraph [ref=e344]: Cisco Systems, 2025
+            - paragraph [ref=e345]: Cybersecurity fundamentals and support
+        - generic [ref=e346]:
+          - img [ref=e348]
+          - generic [ref=e351]:
+            - heading "Security, Compliance, and Identity Fundamentals" [level=3] [ref=e352]
+            - generic [ref=e354]: Microsoft Certified
+            - paragraph [ref=e355]: Microsoft Learn, 2025
+            - paragraph [ref=e356]: Security and compliance principles
+        - generic [ref=e357]:
+          - img [ref=e359]
+          - generic [ref=e367]:
+            - heading "Introduction to Trading, ML and GCP" [level=3] [ref=e368]
+            - generic [ref=e370]: Coursera
+            - paragraph [ref=e371]: Coursera, 2022
+            - paragraph [ref=e372]: Machine Learning and Google Cloud Platform
+        - generic [ref=e373]:
+          - img [ref=e375]
+          - generic [ref=e377]:
+            - heading "How Google Does Machine Learning" [level=3] [ref=e378]
+            - generic [ref=e380]: Coursera
+            - paragraph [ref=e381]: Coursera, 2022
+            - paragraph [ref=e382]: Google's approach to ML at scale
+    - generic [ref=e384]:
+      - generic [ref=e385]:
+        - generic [ref=e386]: EDUCATION
+        - heading "Academic Background" [level=2] [ref=e387]
+      - generic [ref=e389]:
+        - generic [ref=e390]:
+          - img [ref=e392]
+          - generic [ref=e395]:
+            - heading "BTech in Computer Science & Computer Engineering" [level=3] [ref=e396]
+            - paragraph [ref=e397]: ETSIIT — University of Granada
+            - paragraph [ref=e398]: UGR Top 100 (Shanghai Ranking 2024)
+            - paragraph [ref=e399]:
+              - text: "Thesis: \"Outfit Classification AI\" —"
+              - strong [ref=e400]: 10/10
+        - generic [ref=e401]:
+          - img [ref=e403]
+          - generic [ref=e406]:
+            - heading "BSc in Business Administration" [level=3] [ref=e407]
+            - paragraph [ref=e408]: FCCEE — University of Granada
+            - paragraph [ref=e409]: Dual degree combining technical engineering expertise with business strategy and management foundations.
+    - generic [ref=e411]:
+      - generic [ref=e412]:
+        - generic [ref=e413]: CONTACT
+        - heading "Get In Touch" [level=2] [ref=e414]
+      - generic [ref=e416]:
+        - generic [ref=e417]:
+          - paragraph [ref=e418]: I'm always interested in hearing about new opportunities, collaborations, or just having a conversation about software engineering and technology. Feel free to reach out through any of the channels below.
+          - generic [ref=e419]:
+            - link "Send email to María" [ref=e420] [cursor=pointer]:
+              - /url: mailto:mariaizgar01@gmail.com
+              - img [ref=e421]
+              - generic [ref=e424]: mariaizgar01@gmail.com
+            - link "Visit LinkedIn profile" [ref=e425] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mariaig/
+              - img [ref=e426]
+              - generic [ref=e430]: linkedin.com/in/mariaig
+            - link "Visit GitHub profile" [ref=e431] [cursor=pointer]:
+              - /url: https://github.com/mariaig01
+              - img [ref=e432]
+              - generic [ref=e435]: github.com/mariaig01
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - generic [ref=e439]: Name
+            - textbox "Name" [ref=e440]:
+              - /placeholder: Your name
+          - generic [ref=e441]:
+            - generic [ref=e442]: Email
+            - textbox "Email" [ref=e443]:
+              - /placeholder: your@email.com
+          - generic [ref=e444]:
+            - generic [ref=e445]: Message
+            - textbox "Message" [ref=e446]:
+              - /placeholder: Your message...
+          - button "Send Message" [ref=e447] [cursor=pointer]:
+            - img [ref=e448]
+            - generic [ref=e451]: Send Message
+  - contentinfo [ref=e452]:
+    - generic [ref=e453]:
+      - generic [ref=e454]:
+        - generic [ref=e455]:
+          - link "Back to top" [ref=e456] [cursor=pointer]:
+            - /url: "#hero"
+            - img "MI Logo" [ref=e457]
+          - paragraph [ref=e458]: María Izquierdo García
+          - paragraph [ref=e459]: Full-Stack Software Engineer
+        - generic [ref=e460]:
+          - heading "Quick Links" [level=4] [ref=e461]
+          - list [ref=e462]:
+            - listitem [ref=e463]:
+              - link "About" [ref=e464] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e465]:
+              - link "Experience" [ref=e466] [cursor=pointer]:
+                - /url: "#experience"
+            - listitem [ref=e467]:
+              - link "Skills" [ref=e468] [cursor=pointer]:
+                - /url: "#skills"
+            - listitem [ref=e469]:
+              - link "Projects" [ref=e470] [cursor=pointer]:
+                - /url: "#projects"
+            - listitem [ref=e471]:
+              - link "Certifications" [ref=e472] [cursor=pointer]:
+                - /url: "#certifications"
+            - listitem [ref=e473]:
+              - link "Contact" [ref=e474] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e475]:
+          - heading "Connect" [level=4] [ref=e476]
+          - generic [ref=e477]:
+            - link "GitHub profile" [ref=e478] [cursor=pointer]:
+              - /url: https://github.com/mariaig01
+              - img [ref=e479]
+            - link "LinkedIn profile" [ref=e482] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mariaig/
+              - img [ref=e483]
+            - link "Send email" [ref=e487] [cursor=pointer]:
+              - /url: mailto:mariaizgar01@gmail.com
+              - img [ref=e488]
+      - paragraph [ref=e492]: © 2026 María Izquierdo García. All rights reserved.
