@@ -164,4 +164,56 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof lucide !== 'undefined') {
     lucide.createIcons();
   }
+
+  // ── Contact form AJAX submission ──────────────────────────────────
+  const contactForm = document.getElementById('contact-form');
+  if (contactForm) {
+    const emailInput = document.getElementById('contact-email');
+    const replyToInput = document.getElementById('contact-replyto');
+
+    // Sync _replyto with email field
+    if (emailInput && replyToInput) {
+      emailInput.addEventListener('input', () => {
+        replyToInput.value = emailInput.value;
+      });
+    }
+
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const btnText = submitBtn.querySelector('span');
+      const btnIcon = submitBtn.querySelector('[data-lucide]');
+      const statusDiv = document.getElementById('form-status');
+
+      submitBtn.disabled = true;
+      if (btnIcon) btnIcon.style.display = 'none';
+      if (btnText) btnText.textContent = 'Sending...';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          statusDiv.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+          statusDiv.className = 'form-status success';
+          statusDiv.style.display = 'block';
+          contactForm.reset();
+        } else {
+          throw new Error('Form submission failed');
+        }
+      } catch {
+        statusDiv.textContent = 'Something went wrong. Please try again or email me directly.';
+        statusDiv.className = 'form-status error';
+        statusDiv.style.display = 'block';
+      } finally {
+        submitBtn.disabled = false;
+        if (btnIcon) btnIcon.style.display = '';
+        if (btnText) btnText.textContent = 'Send Message';
+      }
+    });
+  }
 });
