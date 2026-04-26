@@ -1,0 +1,424 @@
+- generic [active] [ref=e1]:
+  - link "Skip to main content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - navigation "Main navigation" [ref=e3]:
+    - generic [ref=e4]:
+      - link "María Izquierdo — Home" [ref=e5] [cursor=pointer]:
+        - /url: "#hero"
+        - img "MI Logo" [ref=e6]
+      - link "Download CV" [ref=e7] [cursor=pointer]:
+        - /url: assets/cv/CV_Maria_Angustias_Izquierdo_Garcia.pdf
+      - button "Toggle menu" [ref=e8] [cursor=pointer]
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e15]:
+        - generic [ref=e16]:
+          - paragraph [ref=e17]: Hello, I'm
+          - heading "María Izquierdo" [level=1] [ref=e18]
+          - generic [ref=e19]: I s|
+          - paragraph [ref=e20]: Cybersecurity Engineer — Securing systems, applications & digital identities
+          - generic [ref=e21]:
+            - link "View My Work" [ref=e22] [cursor=pointer]:
+              - /url: "#projects"
+            - link "Get In Touch" [ref=e23] [cursor=pointer]:
+              - /url: "#contact"
+        - generic [ref=e24]:
+          - generic [ref=e25]:
+            - img [ref=e27]
+            - heading "Cybersecurity" [level=3] [ref=e30]
+          - generic [ref=e31]:
+            - img [ref=e33]
+            - heading "Software Dev" [level=3] [ref=e37]
+          - generic [ref=e38]:
+            - img [ref=e40]
+            - heading "AI & ML" [level=3] [ref=e52]
+      - generic [ref=e55]: SCROLL
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: ABOUT ME
+        - heading "Know Who I Am" [level=2] [ref=e60]
+      - generic [ref=e62]:
+        - img "María Izquierdo García" [ref=e64]
+        - generic [ref=e65]:
+          - paragraph [ref=e66]: I'm a Cybersecurity Engineer with a strong foundation in secure application development. With dual degrees in Computer Science and Business Administration from the University of Granada, plus industry certifications from Cisco (CCST Cybersecurity) and Microsoft (SC-900), I combine technical security expertise with real-world software engineering experience at Bracelit.
+          - paragraph [ref=e67]: My professional experience includes building production web platforms with security-conscious practices — JWT authentication, secure API design, and access control. I'm especially interested in the intersection of AI and security, having built an edge AI face authentication system and explored secure deployment of machine learning models. My bachelor thesis on visual classification and preference inference earned a perfect 10/10.
+          - generic [ref=e68]:
+            - generic [ref=e69]:
+              - text: 0/10
+              - generic [ref=e70]: Thesis Grade
+            - generic [ref=e71]:
+              - text: "0"
+              - generic [ref=e72]: Security Certs
+            - generic [ref=e73]:
+              - text: 0%
+              - generic [ref=e74]: Deployment Speed Up
+            - generic [ref=e75]:
+              - text: "0"
+              - generic [ref=e76]: Degrees
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - generic [ref=e80]: EXPERIENCE
+        - heading "Where I've Worked" [level=2] [ref=e81]
+      - generic [ref=e83]:
+        - generic [ref=e84]:
+          - generic [ref=e86]: May 2025 — Present
+          - generic [ref=e87]:
+            - heading "Software Engineer" [level=3] [ref=e88]
+            - paragraph [ref=e89]: Bracelit — Granada, Spain
+            - list [ref=e90]:
+              - listitem [ref=e91]: ▸ Added charts and revenue stats to the backoffice, boosting client insights by 20%
+              - listitem [ref=e92]: ▸ Enhanced admin panel with secure email invitation system and role-based access controls, improving onboarding efficiency by ~18%
+              - listitem [ref=e93]: ▸ Implemented custom sticker printing for event management, reducing manual workload by 22%
+              - listitem [ref=e94]: ▸ Led frontend development of wegowforbrands.com using Astro for cross-brand campaigns
+              - listitem [ref=e95]: ▸ Built a custom Angular platform for interactive seating and venue maps for stadiums
+              - listitem [ref=e96]: ▸ Developed secure backend services for member management dashboard with JWT authentication, payment data handling, and access-controlled API endpoints
+            - generic [ref=e97]:
+              - generic [ref=e98]: Angular
+              - generic [ref=e99]: Astro
+              - generic [ref=e100]: Laravel
+              - generic [ref=e101]: TypeScript
+              - generic [ref=e102]: REST APIs
+              - generic [ref=e103]: JWT Auth
+              - generic [ref=e104]: Secure APIs
+        - generic [ref=e105]:
+          - generic [ref=e107]: Nov 2024 — Apr 2025
+          - generic [ref=e108]:
+            - heading "Software Engineer Internship" [level=3] [ref=e109]
+            - paragraph [ref=e110]: Bracelit — Granada, Spain
+            - list [ref=e111]:
+              - listitem [ref=e112]: ▸ Delivered the complete implementation of wegowforbrands.com using Astro, increasing deployment speed by 25%
+              - listitem [ref=e113]: ▸ Developed the frontend for a web app managing booth access at the Málaga fair
+              - listitem [ref=e114]: ▸ Designed the UI for Boxlit display devices using Ionic, enhancing responsiveness and engagement
+              - listitem [ref=e115]: ▸ Enhanced QR/NFC scanning tool with improved data validation and integrity checks, cutting sync errors by 23%
+            - generic [ref=e116]:
+              - generic [ref=e117]: Astro
+              - generic [ref=e118]: Ionic
+              - generic [ref=e119]: QR/NFC
+              - generic [ref=e120]: JavaScript
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]: SKILLS
+        - heading "What I Work With" [level=2] [ref=e125]
+      - generic [ref=e127]:
+        - button "All" [ref=e128] [cursor=pointer]
+        - button "Security" [ref=e129] [cursor=pointer]
+        - button "Frontend" [ref=e130] [cursor=pointer]
+        - button "Backend" [ref=e131] [cursor=pointer]
+        - button "Mobile" [ref=e132] [cursor=pointer]
+        - button "AI / ML" [ref=e133] [cursor=pointer]
+        - button "Tools" [ref=e134] [cursor=pointer]
+        - button "Languages" [ref=e135] [cursor=pointer]
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - img "JavaScript" [ref=e139]
+          - generic [ref=e140]: JavaScript
+        - generic [ref=e142]:
+          - img "TypeScript" [ref=e144]
+          - generic [ref=e145]: TypeScript
+        - generic [ref=e147]:
+          - img [ref=e149]
+          - generic [ref=e154]: Angular
+        - generic [ref=e156]:
+          - img [ref=e158]
+          - generic [ref=e163]: Astro
+        - generic [ref=e165]:
+          - img "HTML5" [ref=e167]
+          - generic [ref=e168]: HTML5
+        - generic [ref=e170]:
+          - img "CSS3" [ref=e172]
+          - generic [ref=e173]: CSS3
+        - generic [ref=e175]:
+          - img "PHP" [ref=e177]
+          - generic [ref=e178]: PHP
+        - generic [ref=e180]:
+          - img [ref=e182]
+          - generic [ref=e185]: Laravel
+        - generic [ref=e187]:
+          - img "Python" [ref=e189]
+          - generic [ref=e190]: Python
+        - generic [ref=e192]:
+          - img "Flask" [ref=e194]
+          - generic [ref=e195]: Flask
+        - generic [ref=e197]:
+          - img [ref=e199]
+          - generic [ref=e203]: JWT Auth
+        - generic [ref=e205]:
+          - img [ref=e207]
+          - generic [ref=e210]: REST APIs
+        - generic [ref=e212]:
+          - img "MySQL" [ref=e214]
+          - generic [ref=e215]: MySQL
+        - generic [ref=e217]:
+          - img "MongoDB" [ref=e219]
+          - generic [ref=e220]: MongoDB
+        - generic [ref=e222]:
+          - img "Flutter" [ref=e224]
+          - generic [ref=e225]: Flutter
+        - generic [ref=e227]:
+          - img "Dart" [ref=e229]
+          - generic [ref=e230]: Dart
+        - generic [ref=e232]:
+          - img [ref=e234]
+          - generic [ref=e236]: Ionic
+        - generic [ref=e238]:
+          - img "PyTorch" [ref=e240]
+          - generic [ref=e241]: PyTorch
+        - generic [ref=e243]:
+          - img [ref=e245]
+          - generic [ref=e248]: Computer Vision
+        - generic [ref=e250]:
+          - img [ref=e252]
+          - generic [ref=e256]: CNNs
+        - generic [ref=e258]:
+          - img [ref=e260]
+          - generic [ref=e268]: Transfer Learning
+        - generic [ref=e270]:
+          - img [ref=e272]
+          - generic [ref=e275]: Network Security
+        - generic [ref=e277]:
+          - img [ref=e279]
+          - generic [ref=e284]: Vulnerability Assessment
+        - generic [ref=e286]:
+          - img [ref=e288]
+          - generic [ref=e292]: Identity & Access Mgmt
+        - generic [ref=e294]:
+          - img [ref=e296]
+          - generic [ref=e300]: Security Compliance
+        - generic [ref=e302]:
+          - img [ref=e304]
+          - generic [ref=e307]: Encryption & Auth Protocols
+        - generic [ref=e309]:
+          - img "Git" [ref=e311]
+          - generic [ref=e312]: Git
+        - generic [ref=e314]:
+          - img "Docker" [ref=e316]
+          - generic [ref=e317]: Docker
+        - generic [ref=e319]:
+          - img "Linux" [ref=e321]
+          - generic [ref=e322]: Linux
+        - generic [ref=e326]: Figma
+        - generic [ref=e328]:
+          - img [ref=e330]
+          - generic [ref=e332]: Cybersecurity
+        - generic [ref=e334]:
+          - img [ref=e336]
+          - generic [ref=e339]: Spanish
+          - generic [ref=e341]: Native
+        - generic [ref=e342]:
+          - img [ref=e344]
+          - generic [ref=e347]: English
+          - generic [ref=e349]: B2
+    - generic [ref=e351]:
+      - generic [ref=e352]:
+        - generic [ref=e353]: PROJECTS
+        - heading "What I've Built" [level=2] [ref=e354]
+      - generic [ref=e356]:
+        - button "All" [ref=e357] [cursor=pointer]
+        - button "Security" [ref=e358] [cursor=pointer]
+        - button "AI / CV" [ref=e359] [cursor=pointer]
+        - button "OOP / Algorithms" [ref=e360] [cursor=pointer]
+      - generic [ref=e361]:
+        - generic [ref=e362]:
+          - generic [ref=e363]:
+            - img "Edge AI Face Authentication" [ref=e364]
+            - link "View Details" [ref=e366] [cursor=pointer]:
+              - /url: project-pages/face_auth.html
+          - generic [ref=e367]:
+            - text: BIOMETRIC SECURITY & AI
+            - heading "Edge AI Face Authentication" [level=3] [ref=e368]
+            - paragraph [ref=e369]: Quantized CNN for secure facial authentication on edge healthcare devices. On-device biometric processing eliminates cloud dependencies, reducing attack surface and ensuring privacy compliance for patient identity verification.
+            - generic [ref=e370]:
+              - generic [ref=e371]: CNN
+              - generic [ref=e372]: Biometric Auth
+              - generic [ref=e373]: Edge Security
+              - generic [ref=e374]: Privacy
+              - generic [ref=e375]: Healthcare
+        - generic [ref=e376]:
+          - generic [ref=e377]:
+            - img "Enterprise RAG System" [ref=e378]
+            - link "View Details" [ref=e380] [cursor=pointer]:
+              - /url: project-pages/enterprise_rag.html
+          - generic [ref=e381]:
+            - text: AI SECURITY & ACCESS CONTROL
+            - heading "Enterprise RAG with Security Guardrails" [level=3] [ref=e382]
+            - paragraph [ref=e383]: Production retrieval-augmented generation system with built-in security guardrails, access permission controls, and anti-hallucination safeguards. Designed for enterprise-scale knowledge retrieval with data protection compliance.
+            - generic [ref=e384]:
+              - generic [ref=e385]: Guardrails
+              - generic [ref=e386]: Access Control
+              - generic [ref=e387]: Data Protection
+              - generic [ref=e388]: LLM Security
+        - generic [ref=e389]:
+          - generic [ref=e390]:
+            - img "Visual Classification & Preference Inference System" [ref=e391]
+            - link "View Details" [ref=e393] [cursor=pointer]:
+              - /url: project-pages/visual_classification.html
+          - generic [ref=e394]:
+            - text: BACHELOR'S THESIS — 10/10
+            - heading "Visual Classification & Preference Inference System" [level=3] [ref=e395]
+            - paragraph [ref=e396]: Cross-platform social network built with Flutter and Flask. Uses computer vision and AI models to classify visual content and infer user preferences from image data and interaction history. Integrated PostgreSQL, Redis and MongoDB.
+            - generic [ref=e397]:
+              - generic [ref=e398]: Flutter
+              - generic [ref=e399]: Flask
+              - generic [ref=e400]: Computer Vision
+              - generic [ref=e401]: PyTorch
+              - generic [ref=e402]: PostgreSQL
+        - generic [ref=e403]:
+          - generic [ref=e404]:
+            - img "Taylor Experience App" [ref=e405]
+            - link "View Details" [ref=e407] [cursor=pointer]:
+              - /url: project-pages/taylor_experience.html
+          - generic [ref=e408]:
+            - text: COMPUTER VISION & AR
+            - heading "Taylor Experience — Emotion-Based App" [level=3] [ref=e409]
+            - paragraph [ref=e410]: Desktop app that detects facial emotion using real-time computer vision via webcam, recommends a matching Taylor Swift song, and applies virtual makeup using facial landmark tracking and AR techniques. Built with Python, OpenCV and Dlib.
+            - generic [ref=e411]:
+              - generic [ref=e412]: Python
+              - generic [ref=e413]: OpenCV
+              - generic [ref=e414]: Dlib
+              - generic [ref=e415]: AR
+        - generic [ref=e416]:
+          - generic [ref=e417]:
+            - img "Civitas Board Game" [ref=e418]
+            - link "View Details" [ref=e420] [cursor=pointer]:
+              - /url: project-pages/civitas_game.html
+          - generic [ref=e421]:
+            - text: JAVA & OOP
+            - heading "Civitas — OOP Turn-Based Game" [level=3] [ref=e422]
+            - paragraph [ref=e423]: "Turn-based board game in Java using OOP principles with encapsulation, inheritance, and modular class structure: Player, Square, Dice, EventCard. Followed clean code practices, tested with NetBeans IDE. Completed as part of the OOP course at UGR."
+            - generic [ref=e424]:
+              - generic [ref=e425]: Java
+              - generic [ref=e426]: OOP
+              - generic [ref=e427]: Clean Code
+              - generic [ref=e428]: NetBeans
+    - generic [ref=e430]:
+      - generic [ref=e431]:
+        - generic [ref=e432]: CERTIFICATIONS
+        - heading "Achievements & Recognition" [level=2] [ref=e433]
+      - generic [ref=e435]:
+        - generic [ref=e436]:
+          - img [ref=e438]
+          - generic [ref=e440]:
+            - heading "Cisco Certified Support Technician Cybersecurity" [level=3] [ref=e441]
+            - generic [ref=e443]: Cisco Certified
+            - paragraph [ref=e444]: Cisco Systems, 2025
+            - paragraph [ref=e445]: Network security, vulnerability assessment, threat landscape analysis, incident handling, and security operations fundamentals.
+        - generic [ref=e446]:
+          - img [ref=e448]
+          - generic [ref=e451]:
+            - heading "Security, Compliance, and Identity Fundamentals" [level=3] [ref=e452]
+            - generic [ref=e454]: Microsoft Certified
+            - paragraph [ref=e455]: Microsoft Learn, 2025
+            - paragraph [ref=e456]: Identity and access management, Microsoft Entra ID, Zero Trust architecture, compliance management, and information protection.
+        - generic [ref=e457]:
+          - img [ref=e459]
+          - generic [ref=e467]:
+            - heading "Introduction to Trading, ML and GCP" [level=3] [ref=e468]
+            - generic [ref=e470]: Coursera
+            - paragraph [ref=e471]: Coursera, 2022
+            - paragraph [ref=e472]: Machine Learning and Google Cloud Platform
+        - generic [ref=e473]:
+          - img [ref=e475]
+          - generic [ref=e477]:
+            - heading "How Google Does Machine Learning" [level=3] [ref=e478]
+            - generic [ref=e480]: Coursera
+            - paragraph [ref=e481]: Coursera, 2022
+            - paragraph [ref=e482]: Google's approach to ML at scale
+    - generic [ref=e484]:
+      - generic [ref=e485]:
+        - generic [ref=e486]: EDUCATION
+        - heading "Academic Background" [level=2] [ref=e487]
+      - generic [ref=e489]:
+        - generic [ref=e490]:
+          - img [ref=e492]
+          - generic [ref=e495]:
+            - heading "BTech in Computer Science & Computer Engineering" [level=3] [ref=e496]
+            - paragraph [ref=e497]: ETSIIT — University of Granada
+            - paragraph [ref=e498]: UGR Top 100 (Shanghai Ranking 2024)
+            - paragraph [ref=e499]:
+              - text: "Thesis: \"Visual Classification & Preference Inference System\" —"
+              - strong [ref=e500]: 10/10
+        - generic [ref=e501]:
+          - img [ref=e503]
+          - generic [ref=e506]:
+            - heading "BSc in Business Administration" [level=3] [ref=e507]
+            - paragraph [ref=e508]: FCCEE — University of Granada
+            - paragraph [ref=e509]: Dual degree combining technical engineering expertise with business strategy and management foundations.
+    - generic [ref=e511]:
+      - generic [ref=e512]:
+        - generic [ref=e513]: CONTACT
+        - heading "Get In Touch" [level=2] [ref=e514]
+      - generic [ref=e516]:
+        - generic [ref=e517]:
+          - paragraph [ref=e518]: I'm actively seeking opportunities in cybersecurity — whether in security operations, application security, or security engineering. I'm also open to collaborations and conversations about security, AI, and technology. Feel free to reach out through any of the channels below.
+          - generic [ref=e519]:
+            - link "Send email to María" [ref=e520] [cursor=pointer]:
+              - /url: mailto:mariaizgar01@gmail.com
+              - img [ref=e521]
+              - generic [ref=e524]: mariaizgar01@gmail.com
+            - link "Visit LinkedIn profile" [ref=e525] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mariaig/
+              - img [ref=e526]
+              - generic [ref=e530]: linkedin.com/in/mariaig
+            - link "Visit GitHub profile" [ref=e531] [cursor=pointer]:
+              - /url: https://github.com/mariaig01
+              - img [ref=e532]
+              - generic [ref=e535]: github.com/mariaig01
+        - generic [ref=e537]:
+          - generic [ref=e538]:
+            - generic [ref=e539]: Name
+            - textbox "Name" [ref=e540]:
+              - /placeholder: Your name
+          - generic [ref=e541]:
+            - generic [ref=e542]: Email
+            - textbox "Email" [ref=e543]:
+              - /placeholder: your@email.com
+          - generic [ref=e544]:
+            - generic [ref=e545]: Message
+            - textbox "Message" [ref=e546]:
+              - /placeholder: Your message...
+          - button "Send Message" [ref=e547] [cursor=pointer]:
+            - img [ref=e548]
+            - generic [ref=e551]: Send Message
+  - contentinfo [ref=e552]:
+    - generic [ref=e553]:
+      - generic [ref=e554]:
+        - generic [ref=e555]:
+          - link "Back to top" [ref=e556] [cursor=pointer]:
+            - /url: "#hero"
+            - img "MI Logo" [ref=e557]
+          - paragraph [ref=e558]: María Izquierdo García
+          - paragraph [ref=e559]: Cybersecurity Engineer
+        - generic [ref=e560]:
+          - heading "Quick Links" [level=4] [ref=e561]
+          - list [ref=e562]:
+            - listitem [ref=e563]:
+              - link "About" [ref=e564] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e565]:
+              - link "Experience" [ref=e566] [cursor=pointer]:
+                - /url: "#experience"
+            - listitem [ref=e567]:
+              - link "Skills" [ref=e568] [cursor=pointer]:
+                - /url: "#skills"
+            - listitem [ref=e569]:
+              - link "Projects" [ref=e570] [cursor=pointer]:
+                - /url: "#projects"
+            - listitem [ref=e571]:
+              - link "Certifications" [ref=e572] [cursor=pointer]:
+                - /url: "#certifications"
+            - listitem [ref=e573]:
+              - link "Contact" [ref=e574] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e575]:
+          - heading "Connect" [level=4] [ref=e576]
+          - generic [ref=e577]:
+            - link "GitHub profile" [ref=e578] [cursor=pointer]:
+              - /url: https://github.com/mariaig01
+              - img [ref=e579]
+            - link "LinkedIn profile" [ref=e582] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/mariaig/
+              - img [ref=e583]
+            - link "Send email" [ref=e587] [cursor=pointer]:
+              - /url: mailto:mariaizgar01@gmail.com
+              - img [ref=e588]
+      - paragraph [ref=e592]: © 2026 María Izquierdo García. All rights reserved.

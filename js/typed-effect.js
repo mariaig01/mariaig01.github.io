@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!output) return;
 
   const phrases = [
-    'build full-stack web apps',
-    'craft responsive frontends',
-    'develop cross-platform mobile apps',
-    'integrate AI & computer vision',
-    'secure web applications'
+    'secure web applications',
+    'analyze security vulnerabilities',
+    'implement identity & access controls',
+    'build secure full-stack systems',
+    'apply AI to cybersecurity challenges'
   ];
 
   const TYPE_SPEED = 80;

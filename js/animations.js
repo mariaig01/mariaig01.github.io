@@ -12,9 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger);
 
   // ── Hero parallax ────────────────────────────────────────────────
-  gsap.to('.hero-content', {
+  gsap.to('.hero-layout', {
     y: 200,
-    opacity: 0,
     scrollTrigger: {
       trigger: '.hero',
       start: 'top top',
