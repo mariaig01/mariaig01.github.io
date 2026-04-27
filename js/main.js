@@ -167,52 +167,95 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── Contact form AJAX submission ──────────────────────────────────
   const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    const emailInput = document.getElementById('contact-email');
-    const replyToInput = document.getElementById('contact-replyto');
+  const contactSubmit = document.getElementById('contact-submit');
+  const formStatus = document.getElementById('form-status');
 
-    // Sync _replyto with email field
-    if (emailInput && replyToInput) {
-      emailInput.addEventListener('input', () => {
-        replyToInput.value = emailInput.value;
-      });
+  if (contactForm && contactSubmit && formStatus) {
+    const formWrapper = contactForm.closest('.contact-form-wrapper');
+
+    function createEnvelopeSVG() {
+      const ns = 'http://www.w3.org/2000/svg';
+      const svg = document.createElementNS(ns, 'svg');
+      svg.setAttribute('viewBox', '0 0 24 24');
+      svg.setAttribute('fill', 'none');
+      svg.setAttribute('stroke', 'currentColor');
+      svg.setAttribute('stroke-width', '1.5');
+      svg.setAttribute('stroke-linecap', 'round');
+      svg.setAttribute('stroke-linejoin', 'round');
+      const r = document.createElementNS(ns, 'rect');
+      r.setAttribute('width', '20');
+      r.setAttribute('height', '16');
+      r.setAttribute('x', '2');
+      r.setAttribute('y', '4');
+      r.setAttribute('rx', '2');
+      const p = document.createElementNS(ns, 'path');
+      p.setAttribute('d', 'm22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7');
+      svg.appendChild(r);
+      svg.appendChild(p);
+      return svg;
+    }
+
+    function showEnvelopeAnimation() {
+      contactForm.style.display = 'none';
+      const overlay = document.createElement('div');
+      overlay.className = 'envelope-overlay';
+      const icon = document.createElement('div');
+      icon.className = 'envelope-icon';
+      icon.appendChild(createEnvelopeSVG());
+      const text = document.createElement('p');
+      text.className = 'envelope-text';
+      text.textContent = 'Sending your message...';
+      overlay.appendChild(icon);
+      overlay.appendChild(text);
+      formWrapper.appendChild(overlay);
+      return { overlay, text };
+    }
+
+    function showResult(overlay, text, success, message) {
+      const icon = overlay.querySelector('.envelope-icon');
+      icon.classList.add('envelope-sent');
+      text.textContent = message;
+      text.className = 'envelope-text ' + (success ? 'envelope-text--success' : 'envelope-text--error');
+
+      setTimeout(() => {
+        overlay.classList.add('envelope-overlay--fade-out');
+        overlay.addEventListener('animationend', () => {
+          overlay.remove();
+          contactForm.style.display = '';
+          if (success) contactForm.reset();
+          formStatus.className = 'form-status form-status--visible ' + (success ? 'form-status--success' : 'form-status--error');
+          formStatus.textContent = message;
+          setTimeout(() => {
+            formStatus.classList.add('form-status--fade-out');
+            formStatus.addEventListener('animationend', () => {
+              formStatus.className = 'form-status';
+              formStatus.textContent = '';
+            }, { once: true });
+          }, 5000);
+        });
+      }, 3500);
     }
 
     contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
-
-      const submitBtn = contactForm.querySelector('button[type="submit"]');
-      const btnText = submitBtn.querySelector('span');
-      const btnIcon = submitBtn.querySelector('[data-lucide]');
-      const statusDiv = document.getElementById('form-status');
-
-      submitBtn.disabled = true;
-      if (btnIcon) btnIcon.style.display = 'none';
-      if (btnText) btnText.textContent = 'Sending...';
+      const formData = Object.fromEntries(new FormData(contactForm));
+      const { overlay, text } = showEnvelopeAnimation();
 
       try {
-        const response = await fetch(contactForm.action, {
+        const res = await fetch(contactForm.action, {
           method: 'POST',
-          body: new FormData(contactForm),
-          headers: { 'Accept': 'application/json' }
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(formData),
         });
+        const data = await res.json();
 
-        if (response.ok) {
-          statusDiv.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-          statusDiv.className = 'form-status success';
-          statusDiv.style.display = 'block';
-          contactForm.reset();
+        if (data.success) {
+          showResult(overlay, text, true, 'Message sent successfully! I\'ll get back to you soon.');
         } else {
-          throw new Error('Form submission failed');
+          showResult(overlay, text, false, data.message || 'Something went wrong. Please try again.');
         }
       } catch {
-        statusDiv.textContent = 'Something went wrong. Please try again or email me directly.';
-        statusDiv.className = 'form-status error';
-        statusDiv.style.display = 'block';
-      } finally {
-        submitBtn.disabled = false;
-        if (btnIcon) btnIcon.style.display = '';
-        if (btnText) btnText.textContent = 'Send Message';
+        showResult(overlay, text, false, 'Network error. Please try again or email me directly.');
       }
     });
   }
