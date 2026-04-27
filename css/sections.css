@@ -11,6 +11,8 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  padding: 80px 0 160px;
+  box-sizing: border-box;
 }
 
 #particle-canvas {

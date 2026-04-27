@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!output) return;
 
   const phrases = [
-    'secure web applications',
-    'analyze security vulnerabilities',
-    'implement identity & access controls',
-    'build secure full-stack systems',
-    'apply AI to cybersecurity challenges'
+    'build secure web applications',
+    'work with Angular, Astro & Laravel',
+    'hold Cisco & Microsoft security certs',
+    'protect what I know how to build',
+    'train AI & computer vision models'
   ];
 
   const TYPE_SPEED = 80;

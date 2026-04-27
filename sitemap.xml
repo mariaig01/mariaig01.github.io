@@ -1,32 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://joseteo.github.io/</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://mariaig01.github.io/</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://joseteo.github.io/project-pages/3d_scene.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://mariaig01.github.io/project-pages/visual_classification.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://joseteo.github.io/project-pages/maze-navigation.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://mariaig01.github.io/project-pages/taylor_experience.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://joseteo.github.io/project-pages/monopoly_game.html</loc>
-    <lastmod>2026-03-26</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://joseteo.github.io/project-pages/n_queens_solution.html</loc>
-    <lastmod>2026-03-26</lastmod>
+    <loc>https://mariaig01.github.io/project-pages/civitas_game.html</loc>
+    <lastmod>2026-04-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

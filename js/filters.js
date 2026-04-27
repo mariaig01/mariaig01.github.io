@@ -7,13 +7,15 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   /**
-   * Capture the natural height of a grid when all items are visible,
-   * then set it as min-height so the section never collapses on filter.
+   * Recalculate grid min-height based on currently visible cards.
+   * Temporarily clears min-height, measures, then re-applies.
    */
-  function lockGridHeight(grid) {
-    if (!grid || grid.dataset.heightLocked) return;
-    grid.style.minHeight = grid.offsetHeight + 'px';
-    grid.dataset.heightLocked = 'true';
+  function updateGridHeight(grid) {
+    if (!grid) return;
+    grid.style.minHeight = '';
+    requestAnimationFrame(() => {
+      grid.style.minHeight = grid.offsetHeight + 'px';
+    });
   }
 
   /**
@@ -36,26 +38,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const skillCards = document.querySelectorAll('.skill-card');
     const skillsGrid = document.querySelector('.skills-grid');
 
-    // Lock height on first filter interaction
-    let skillsHeightLocked = false;
-
     skillTabs.addEventListener('click', (e) => {
       const btn = e.target.closest('button');
       if (!btn) return;
 
       const category = btn.getAttribute('data-category');
 
-      // Lock the grid height on first filter click
-      if (!skillsHeightLocked) {
-        lockGridHeight(skillsGrid);
-        skillsHeightLocked = true;
-      }
-
-      // Update active button
       skillButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Filter skill cards
       skillCards.forEach((card) => {
         const cardCategory = card.getAttribute('data-category');
         if (category === 'all' || cardCategory === category) {
@@ -66,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // No refresh needed — min-height keeps page height stable
+      updateGridHeight(skillsGrid);
     });
   }
 
@@ -78,29 +69,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const projectCards = document.querySelectorAll('.project-card');
     const projectsGrid = document.querySelector('.projects-grid');
 
-    // Lock height on first filter interaction
-    let projectsHeightLocked = false;
-
     filterButtons.addEventListener('click', (e) => {
       const btn = e.target.closest('button');
       if (!btn) return;
 
       const filter = btn.getAttribute('data-filter');
 
-      // Lock the grid height on first filter click
-      if (!projectsHeightLocked) {
-        lockGridHeight(projectsGrid);
-        projectsHeightLocked = true;
-      }
-
-      // Update active button
       projectButtons.forEach((b) => b.classList.remove('active'));
       btn.classList.add('active');
 
-      // Filter project cards
       projectCards.forEach((card) => {
         const cardCategory = card.getAttribute('data-category');
-        if (filter === 'all' || cardCategory === filter) {
+        const cardStatus = card.getAttribute('data-status');
+        const match = filter === 'all'
+          || cardCategory === filter
+          || cardStatus === filter;
+
+        if (match) {
           card.removeAttribute('data-visible');
           clearCardStyles(card);
         } else {
@@ -108,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      // No refresh needed — min-height keeps page height stable
+      updateGridHeight(projectsGrid);
     });
   }
 });
