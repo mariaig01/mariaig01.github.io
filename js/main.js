@@ -223,15 +223,8 @@ document.addEventListener('DOMContentLoaded', () => {
           overlay.remove();
           contactForm.style.display = '';
           if (success) contactForm.reset();
-          formStatus.className = 'form-status form-status--visible ' + (success ? 'form-status--success' : 'form-status--error');
-          formStatus.textContent = message;
-          setTimeout(() => {
-            formStatus.classList.add('form-status--fade-out');
-            formStatus.addEventListener('animationend', () => {
-              formStatus.className = 'form-status';
-              formStatus.textContent = '';
-            }, { once: true });
-          }, 5000);
+          formStatus.className = 'form-status';
+          formStatus.textContent = '';
         });
       }, 3500);
     }
