@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+     <title>Application Security Pipeline</title>
+    <meta name="description" content="End-to-end AppSec workflow — threat modeling, SAST/DAST/SCA in CI/CD, vulnerability remediation, and secure code review process.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html#projects">
+        <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+        <span class="nav-title">Mar&iacute;a Izquierdo / Projects</span>
+        <a class="button" href="mailto:mariaizgar01@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">Application Security Pipeline</div>
+        <div class="subheader-text">In Development &mdash; Application Security</div>
+        <div class="body-text">An end-to-end Application Security workflow built around a sample web app. Covers threat modeling, automated security scanning (SAST, DAST, SCA) integrated into CI/CD, hands-on vulnerability remediation, and a documented secure code review process that developers can actually follow.</div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What This Project Is About</div>
+        <div class="project-details-content">
+          <div class="body-text">AppSec Engineers work directly with developers to make sure the code they ship is secure. This isn't about running a scanner and handing over a report — it's about understanding the application, identifying what could go wrong, and helping the team fix it before it reaches production.</div>
+          <div class="body-text">The project starts with threat modeling a sample web application. Threat modeling is a structured way of asking "what could an attacker do to this app?" — mapping out the data flows, identifying trust boundaries, and listing potential threats using a framework like STRIDE. This is one of the most valuable skills in AppSec because it requires understanding the application's architecture, not just its code.</div>
+          <div class="body-text">Next comes the automated security pipeline built with GitHub Actions. Semgrep handles SAST (Static Application Security Testing) — scanning the source code for patterns that indicate vulnerabilities like SQL injection, XSS, or insecure deserialization. Trivy runs SCA (Software Composition Analysis) — checking every dependency for known CVEs. OWASP ZAP performs DAST (Dynamic Application Security Testing) — attacking the running application from the outside to find issues that only appear at runtime.</div>
+          <div class="body-text">The most important part is what happens after the scanners find something. Each finding is triaged — is it a real vulnerability or a false positive? What's the actual risk? Then the vulnerability is fixed in the code, with a clear explanation of why the original code was insecure and why the fix works. This demonstrates the human judgment that makes AppSec hard to automate.</div>
+          <div class="body-text">Finally, the project includes a documented secure code review checklist — a practical guide for reviewing pull requests with security in mind. This is what AppSec Engineers create for development teams: not just "here's what's broken" but "here's how to build it right."</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What I'll Learn</div>
+        <div class="project-details-content">
+          <div class="body-text">How to threat model an application using STRIDE or similar frameworks. How SAST, DAST, and SCA tools work and how to integrate them into CI/CD. How to triage scanner findings — distinguishing real vulnerabilities from false positives. How to fix common web vulnerabilities (OWASP Top 10) in actual code. How to create secure code review processes that help developers ship safer code.</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Why This Role Matters</div>
+        <div class="project-details-content">
+          <div class="body-text">AppSec Engineers sit at the intersection of security and development. AI can run scanners, but it can't understand why a business chose a particular architecture, whether a "vulnerability" actually matters in context, or how to convince a development team to change their workflow. This role requires deep code understanding, human communication, and contextual judgment — which is why it has strong long-term stability and good work-life balance compared to operations-heavy security roles.</div>
+        </div>
+      </div>
+      <div id="project-details" style="margin-bottom: 48px;">
+        <div class="subheader-text">Technologies</div>
+        <div class="project-details-content">
+          <div class="body-text">GitHub Actions &bull; Semgrep &bull; OWASP ZAP &bull; Trivy &bull; Gitleaks &bull; Docker &bull; STRIDE &bull; OWASP Top 10</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/mariaig">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:mariaizgar01@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+    <footer id="footer">
+      <p>&copy; 2026 Mar&iacute;a Angustias Izquierdo Garc&iacute;a. All rights reserved.</p>
+    </footer>
+	</body>
+</html>

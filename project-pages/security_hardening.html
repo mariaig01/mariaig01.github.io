@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+     <title>Security Hardening & Automation Framework</title>
+    <meta name="description" content="Python framework that automates system hardening against CIS benchmarks — firewall rules, access controls, permission audits, and compliance reports.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html#projects">
+        <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+        <span class="nav-title">Mar&iacute;a Izquierdo / Projects</span>
+        <a class="button" href="mailto:mariaizgar01@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">Security Hardening & Automation Framework</div>
+        <div class="subheader-text">In Development &mdash; Security Engineering</div>
+        <div class="body-text">A Python-based framework that automates the process of hardening Linux systems against CIS benchmarks. Instead of manually checking hundreds of security settings, the framework audits a system, identifies gaps, applies fixes, and generates a compliance report — the kind of tooling Security Engineers build internally at companies.</div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What This Project Is About</div>
+        <div class="project-details-content">
+          <div class="body-text">Security Engineers don't just find problems — they design and build systems that prevent them. This project is about building a tool that takes a fresh Linux machine and hardens it to a known security standard, automatically.</div>
+          <div class="body-text">CIS (Center for Internet Security) Benchmarks are industry-standard checklists for securing operating systems. They cover hundreds of settings — password policies, file permissions, kernel parameters, network configuration, logging, and more. Manually checking all of these is tedious and error-prone, which is exactly why Security Engineers automate it.</div>
+          <div class="body-text">The framework runs as a set of Python scripts against Linux VMs (Ubuntu/Debian) running in VirtualBox. Each module handles a different security domain: one configures iptables firewall rules to restrict network traffic, another enforces file permission standards, another sets up proper logging with rsyslog, and another audits user accounts and SSH configuration.</div>
+          <div class="body-text">After running, the framework generates a compliance report — a summary of what was checked, what passed, what failed, and what was automatically fixed. This is the same kind of output that internal security teams produce during hardening reviews.</div>
+          <div class="body-text">The project also includes a "drift detection" mode that can be run periodically to check if a previously hardened system has drifted from its secure baseline — a common real-world requirement.</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What I'll Learn</div>
+        <div class="project-details-content">
+          <div class="body-text">How to harden Linux systems following industry-standard benchmarks (CIS). How to write Python automation for security operations. How iptables firewall rules, file permissions, SSH configuration, and logging work at a deep level. How to build tooling that other engineers can use — designing for reusability, not just one-off scripts. How Security Engineers think about compliance and system baselines.</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Why This Role Matters</div>
+        <div class="project-details-content">
+          <div class="body-text">Security Engineers build and design security systems — they don't just operate them. This role exists at every major tech company (Amazon, Microsoft, Google) and is hard to automate because it requires understanding complex systems, making architectural trade-offs, and building tools that work across different environments. This project demonstrates the "builder" mindset that distinguishes Security Engineers from analysts.</div>
+        </div>
+      </div>
+      <div id="project-details" style="margin-bottom: 48px;">
+        <div class="subheader-text">Technologies</div>
+        <div class="project-details-content">
+          <div class="body-text">Python &bull; Linux (Ubuntu/Debian) &bull; CIS Benchmarks &bull; iptables &bull; rsyslog &bull; SSH &bull; Bash &bull; VirtualBox</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/mariaig">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:mariaizgar01@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+    <footer id="footer">
+      <p>&copy; 2026 Mar&iacute;a Angustias Izquierdo Garc&iacute;a. All rights reserved.</p>
+    </footer>
+	</body>
+</html>

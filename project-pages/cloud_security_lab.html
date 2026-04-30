@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+     <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32.png">
+     <link rel="shortcut icon" href="../assets/images/favicon.ico">
+     <title>Cloud Security Architecture Lab</title>
+    <meta name="description" content="Secure AWS environment with Terraform IaC, least-privilege IAM, VPC segmentation, CloudTrail logging, and S3 hardening — all within the free tier.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html#projects">
+        <image src="../assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+        <span class="nav-title">Mar&iacute;a Izquierdo / Projects</span>
+        <a class="button" href="mailto:mariaizgar01@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+    <div id="main-content">
+      <div id="project-header">
+        <div class="main-title">Cloud Security Architecture Lab</div>
+        <div class="subheader-text">In Development &mdash; Cloud Security</div>
+        <div class="body-text">A secure AWS environment designed and deployed entirely with Terraform. The project focuses on building cloud infrastructure the way a Cloud Security Engineer would — with least-privilege access, network isolation, encryption, and audit logging baked in from the start. Everything runs within the AWS free tier.</div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What This Project Is About</div>
+        <div class="project-details-content">
+          <div class="body-text">Cloud Security Engineers don't just monitor cloud environments — they design and build them securely from day one. This project is about doing exactly that: creating an AWS account structure with proper security controls, all defined as code so it's repeatable and auditable.</div>
+          <div class="body-text">The foundation is IAM (Identity and Access Management). Instead of giving broad permissions, every role and policy follows the principle of least privilege — each user or service gets only the exact permissions it needs, nothing more. The project includes custom IAM policies, role-based access, and MFA enforcement.</div>
+          <div class="body-text">Networking is handled through a VPC (Virtual Private Cloud) with proper segmentation — public subnets for things that need internet access, private subnets for everything else, security groups acting as firewalls, and network ACLs as an extra layer. This mirrors how production cloud environments are actually architected.</div>
+          <div class="body-text">S3 buckets are hardened with versioning, server-side encryption, public access blocks, and bucket policies that restrict who can read or write data. S3 misconfigurations are one of the most common sources of cloud data breaches, so getting this right matters.</div>
+          <div class="body-text">CloudTrail is enabled to log every API call made in the account — who did what, when, and from where. This creates an audit trail that's essential for incident investigation and compliance. Logs are stored in a dedicated, locked-down S3 bucket.</div>
+          <div class="body-text">Everything is deployed using Terraform, an Infrastructure as Code tool. This means the entire security architecture is defined in version-controlled configuration files — no clicking around in the AWS console. If something breaks, you can rebuild the entire environment from scratch in minutes.</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">What I'll Learn</div>
+        <div class="project-details-content">
+          <div class="body-text">How to design secure cloud architectures with proper network isolation and access controls. How IAM policies work and how to enforce least privilege in practice. How to harden S3 storage against common misconfiguration attacks. How to set up cloud audit logging and understand what the logs tell you. How to use Terraform to define security infrastructure as code — a core skill for Cloud Security Engineers.</div>
+        </div>
+      </div>
+      <div id="project-details">
+        <div class="subheader-text">Why This Role Matters</div>
+        <div class="project-details-content">
+          <div class="body-text">Cloud Security Engineer is one of the highest-demand, highest-salary roles in cybersecurity. Every company migrating to the cloud needs someone who can design secure architectures — and the complexity of cloud environments (constantly changing, multi-service, multi-region) makes this very difficult to automate away. This project demonstrates that foundational skill.</div>
+        </div>
+      </div>
+      <div id="project-details" style="margin-bottom: 48px;">
+        <div class="subheader-text">Technologies</div>
+        <div class="project-details-content">
+          <div class="body-text">AWS &bull; Terraform &bull; IAM &bull; VPC &bull; Security Groups &bull; S3 &bull; CloudTrail &bull; KMS &bull; AWS CLI</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/mariaig">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+      <a class="icon-link" href="mailto:mariaizgar01@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+    <footer id="footer">
+      <p>&copy; 2026 Mar&iacute;a Angustias Izquierdo Garc&iacute;a. All rights reserved.</p>
+    </footer>
+	</body>
+</html>
