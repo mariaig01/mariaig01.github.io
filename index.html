@@ -428,69 +428,27 @@
                     <button data-filter="in-development">In Development</button>
                     <button data-filter="ai-ml">AI / CV</button>
                     <button data-filter="startup">Startup</button>
-                    <button data-filter="algorithms">OOP / Algorithms</button>
                 </div>
                 <div class="projects-grid">
-                    <!-- 1. Visual Classification & Preference Inference System (Bachelor Thesis) -->
+                    <!-- 1. Secure Visual Classification Platform (Bachelor Thesis) -->
                     <div class="project-card" data-category="ai-ml" data-status="completed">
                         <div class="project-image">
-                            <img src="assets/images/visual_classification.png" alt="Visual Classification & Preference Inference System" loading="lazy">
+                            <img src="assets/images/visual_classification.png" alt="Secure Visual Classification Platform" loading="lazy">
                             <div class="project-overlay">
                                 <a href="project-pages/visual_classification.html" class="btn btn-sm btn-primary">View Details</a>
                             </div>
                         </div>
                         <div class="project-body">
                             <span class="project-category">BACHELOR'S THESIS: 10/10</span>
-                            <h3>Visual Classification & Preference Inference System</h3>
-                            <p>Full-stack social network with Flutter and Flask featuring secure REST API design, multi-database architecture (PostgreSQL, Redis, MongoDB), user authentication flows, and AI-powered visual classification with PyTorch.</p>
+                            <h3>Secure Visual Classification Platform</h3>
+                            <p>Architected a secure full-stack platform around its trust boundaries: a Flask REST API with authentication and role-based access control over Redis-managed sessions, backed by a multi-database design that isolates concerns — PostgreSQL with parameterized queries, Redis for secure sessions, and MongoDB for isolated log layers. Endpoints were validated and hardened per OWASP, with Docker for runtime isolation.</p>
                             <div class="project-tags">
-                                <span>Flutter</span>
                                 <span>Flask</span>
-                                <span>Computer Vision</span>
-                                <span>PyTorch</span>
+                                <span>REST API</span>
                                 <span>PostgreSQL</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 2. Taylor Experience -->
-                    <div class="project-card" data-category="ai-ml" data-status="completed">
-                        <div class="project-image">
-                            <img src="assets/images/taylor_experience.png" alt="Taylor Experience App" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="project-pages/taylor_experience.html" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <span class="project-category">COMPUTER VISION & AR</span>
-                            <h3>Taylor Experience: Emotion-Based App</h3>
-                            <p>Desktop app with real-time facial emotion detection via webcam, handling sensitive biometric data processing with privacy-conscious design. Uses OpenCV and Dlib for facial landmark tracking and AR-based virtual makeup.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>OpenCV</span>
-                                <span>Dlib</span>
-                                <span>AR</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 3. Civitas: OOP Turn-Based Game -->
-                    <div class="project-card" data-category="algorithms" data-status="completed">
-                        <div class="project-image">
-                            <img src="assets/images/civitas_game.png" alt="Civitas Board Game" loading="lazy">
-                            <div class="project-overlay">
-                                <a href="project-pages/civitas_game.html" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <span class="project-category">JAVA & OOP</span>
-                            <h3>Civitas: OOP Turn-Based Game</h3>
-                            <p>Turn-based board game in Java emphasising input validation, game state integrity, and clean modular architecture with encapsulation, inheritance, and well-defined class responsibilities. Built following clean code practices at UGR.</p>
-                            <div class="project-tags">
-                                <span>Java</span>
-                                <span>OOP</span>
-                                <span>Clean Code</span>
-                                <span>NetBeans</span>
+                                <span>Redis</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
                             </div>
                         </div>
                     </div>
@@ -531,38 +489,13 @@
                         <div class="project-body">
                             <span class="project-category">CLOUD SECURITY</span>
                             <h3>Cloud Security Architecture Lab</h3>
-                            <p>Secure AWS environment built with Terraform: least-privilege IAM policies, VPC network segmentation, S3 bucket hardening, CloudTrail audit logging, and automated compliance checks. All within the free tier.</p>
+                            <p>Designed a least-privilege AWS environment from threat assumptions — scoped IAM roles, VPC segmentation, and tight S3 access policies chosen to minimize the blast radius of a single compromised credential. Codified as Terraform IaC for reproducible, auditable deployments, with CloudTrail audit logging for detection and incident traceability.</p>
                             <div class="project-tags">
                                 <span>AWS</span>
                                 <span>Terraform</span>
                                 <span>IAM</span>
                                 <span>VPC</span>
                                 <span>CloudTrail</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- In Development: Security Hardening & Automation Framework -->
-                    <div class="project-card project-card--in-dev" data-category="in-development" data-status="in-development">
-                        <div class="project-image project-image--planned">
-                            <div class="project-placeholder">
-                                <i data-lucide="shield-check"></i>
-                            </div>
-                            <span class="project-status-badge badge-in-dev">IN DEVELOPMENT</span>
-                            <div class="project-overlay">
-                                <a href="project-pages/security_hardening.html" class="btn btn-sm btn-primary">View Details</a>
-                            </div>
-                        </div>
-                        <div class="project-body">
-                            <span class="project-category">SECURITY ENGINEERING</span>
-                            <h3>Security Hardening & Automation Framework</h3>
-                            <p>Python-based framework that automates system hardening against CIS benchmarks: configuring firewalls, enforcing access controls, auditing permissions, and generating compliance reports across Linux VMs.</p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>Linux</span>
-                                <span>CIS Benchmarks</span>
-                                <span>Automation</span>
-                                <span>iptables</span>
                             </div>
                         </div>
                     </div>
@@ -581,13 +514,13 @@
                         <div class="project-body">
                             <span class="project-category">APPLICATION SECURITY</span>
                             <h3>Application Security Pipeline</h3>
-                            <p>End-to-end AppSec workflow: threat modeling a sample app, integrating SAST/DAST/SCA into CI/CD with GitHub Actions, fixing real vulnerabilities, and documenting a secure code review process developers can follow.</p>
+                            <p>Threat-modeled the application with STRIDE to prioritize the highest-risk flows, then placed CI/CD security gates where they catch the most impactful defect classes before release. Implemented with Semgrep, OWASP ZAP, and Trivy plus a documented secure code review process, tuned to cut false positives and stay actionable for developers.</p>
                             <div class="project-tags">
-                                <span>GitHub Actions</span>
+                                <span>STRIDE</span>
+                                <span>Threat Modeling</span>
                                 <span>Semgrep</span>
                                 <span>OWASP ZAP</span>
                                 <span>Trivy</span>
-                                <span>Threat Modeling</span>
                             </div>
                         </div>
                     </div>

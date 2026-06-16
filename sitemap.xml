@@ -12,16 +12,4 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://mariaig01.github.io/project-pages/taylor_experience.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mariaig01.github.io/project-pages/civitas_game.html</loc>
-    <lastmod>2026-04-27</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
